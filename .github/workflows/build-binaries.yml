@@ -30,7 +30,7 @@ jobs:
           pyinstaller --onefile vibe_security/cli.py --name vibe-security
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vibe-security-${{ runner.os }}
           path: dist/vibe-security*
