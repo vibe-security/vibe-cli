@@ -1,11 +1,11 @@
 {
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Vibe Security CLI",
   "homepage": "https://github.com/vibe-security/vibe-cli",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/vibe-security/vibe-cli/releases/download/v0.1.1/vibe-security-windows.exe",
+      "url": "https://github.com/vibe-security/vibe-cli/releases/download/v1.0.0/vibe-security-windows.exe",
       "hash": "SHA256_PLACEHOLDER"
     }
   },

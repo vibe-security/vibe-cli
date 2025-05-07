@@ -13,14 +13,14 @@ sudo gem install --no-document fpm
 
 Package the binary:
 ```sh
-fpm -s dir -t deb -n vibe-security -v 0.1.1 --prefix /usr/local/bin dist/vibe-security-linux
+fpm -s dir -t deb -n vibe-security -v 1.0.0 --prefix /usr/local/bin dist/vibe-security-linux
 ```
 
-This will create a `vibe-security_0.1.1_amd64.deb` file.
+This will create a `vibe-security_1.0.0_amd64.deb` file.
 
 ## 3. Distribute
 - Upload the .deb to GitHub Releases or your own APT repo.
 - Users can install with:
   ```sh
-  sudo dpkg -i vibe-security_0.1.1_amd64.deb
+  sudo dpkg -i vibe-security_1.0.0_amd64.deb
   ```

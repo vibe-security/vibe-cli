@@ -6,7 +6,7 @@ To distribute `vibe-security` via Homebrew, after you have a binary release (mac
 class VibeSecurity < Formula
   desc "Vibe Security CLI"
   homepage "https://github.com/vibe-security/vibe-cli"
-  url "https://github.com/vibe-security/vibe-cli/releases/download/v0.1.1/vibe-security-macos"
+  url "https://github.com/vibe-security/vibe-cli/releases/download/v1.0.0/vibe-security-macos"
   version "0.1.1"
   sha256 "PUT_SHA256_HERE"
 
