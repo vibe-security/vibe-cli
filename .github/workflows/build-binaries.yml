@@ -1,0 +1,36 @@
+name: Build CLI Binaries
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+
+      - name: Build with PyInstaller
+        run: |
+          pyinstaller --onefile vibe_security/cli.py --name vibe-security
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: vibe-security-${{ runner.os }}
+          path: dist/vibe-security*
