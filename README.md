@@ -7,31 +7,44 @@ A fast, user-friendly command-line tool to run comprehensive security scans (Sem
 - Code, dependency, and container scanning
 - Friendly, emoji-rich output
 
-## Native Installation
+## Installation (All Platforms)
 
-### Linux (Debian/Ubuntu)
-Download the latest `.deb` from [Releases](https://github.com/vibe-security/vibe-cli/releases) and install:
+You can install Vibe Security CLI on any platform using the prebuilt binaries from the [GitHub Releases page](https://github.com/vibe-security/vibe-cli/releases).
+
+### Linux/macOS (tar.gz)
 ```sh
-sudo dpkg -i vibe-security_VERSION_amd64.deb
+# Download the latest release (replace version as needed)
+wget https://github.com/vibe-security/vibe-cli/releases/download/v1.0.0/vibe-security-1.0.0-linux.tar.gz
+# or for macOS:
+wget https://github.com/vibe-security/vibe-cli/releases/download/v1.0.0/vibe-security-1.0.0-macos.tar.gz
+
+# Extract the binary
+# For Linux:
+tar -xzf vibe-security-1.0.0-linux.tar.gz
+# For macOS:
+tar -xzf vibe-security-1.0.0-macos.tar.gz
+
+# Move to a directory in your PATH
+sudo mv vibe-security /usr/local/bin/
+
+# Test the CLI
+vibe-security --help
 ```
 
-### macOS (Homebrew)
-```sh
-brew tap vibe-security/tap
-brew install vibe-security
-```
+### Windows (zip)
+1. Download the latest `zip` from the [releases page](https://github.com/vibe-security/vibe-cli/releases).
+2. Extract it using Windows Explorer or PowerShell:
+   ```powershell
+   Expand-Archive -Path .\vibe-security-1.0.0-windows.zip -DestinationPath .
+   ```
+3. Optionally add the extracted folder to your PATH, or run the `.exe` directly:
+   ```powershell
+   .\vibe-security.exe --help
+   ```
 
-### Windows
-Download the `.exe` from [Releases](https://github.com/vibe-security/vibe-cli/releases) and run it, or use [Scoop](https://scoop.sh/):
-```sh
-scoop bucket add vibe-security https://github.com/vibe-security/scoop-bucket.git
-scoop install vibe-security
-```
+---
 
-### Universal (Python/pipx)
-```sh
-pipx install vibe-security
-```
+For advanced users, you may also use Homebrew, Scoop, or a .deb package (see docs in this repo), but the above approach works on all platforms with no extra tools required.
 
 ## Usage
 ```sh
