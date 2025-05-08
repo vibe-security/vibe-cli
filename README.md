@@ -3,6 +3,9 @@
 A fast, user-friendly command-line tool to run comprehensive security scans (Semgrep, SQLMap, Trivy) on your codebase. Perfect for local development and CI/CD pipelines.
 
 ## Features
+
+📚 **Full documentation:** [Vibe Security Suite Docs – CLI](https://github.com/vibe-security/vibe-security-suite/blob/main/docs-site/docs/cli.md)
+
 - One-command install
 - Code, dependency, and container scanning
 - Friendly, emoji-rich output
