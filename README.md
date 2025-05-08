@@ -4,7 +4,7 @@ A fast, user-friendly command-line tool to run comprehensive security scans (Sem
 
 ## Features
 
-📚 **Full documentation:** [Vibe Security Suite Docs – CLI](https://github.com/vibe-security/vibe-security-suite/blob/main/docs-site/docs/cli.md)
+📚 **Full documentation:** [Vibe Security Suite Docs – CLI](https://vibe-security.github.io/vibe-security-suite/docs/cli)
 
 - One-command install
 - Code, dependency, and container scanning
